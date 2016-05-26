@@ -32,6 +32,11 @@ app.get('/g/groupName', function (req, res) {
 	res.render('pages/group');
 });
 
+// search
+app.get('/search', function (req, res) {
+	res.render('pages/search');
+});
+
 // errors
 app.use(function(req,res){
 	res.render('pages/404');

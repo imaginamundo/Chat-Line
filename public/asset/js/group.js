@@ -7,15 +7,17 @@
 
 	users = document.querySelectorAll('#users a');
 
-	makeActive = function () {
+	makeActive = function (e) {
 		for (var i = 0; i < users.length; i++)
 		users[i].classList.remove('active');
 
 		this.classList.add('active');
+
+		e.preventDefault();
 	};
 
 	for (var i = 0; i < users.length; i++)
-	users[i].addEventListener('mousedown', makeActive);
+	users[i].addEventListener('click', makeActive);
 
 	// Share
 	var shareButton = document.getElementById('share');

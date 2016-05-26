@@ -50,3 +50,15 @@
         }
     }
 }
+@media (max-width: $breakpoint) {
+    .group-list {
+        .group {
+            width: 100%;
+        }
+        &.grid {
+            .group {
+                width: 100%;
+            }
+        }
+    }
+}

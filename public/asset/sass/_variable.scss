@@ -1,5 +1,8 @@
 // Grid
  $container-width: 960px;
+
+// Responsive
+$breakpoint: 820px;
  
 // Color
 $default: #888 !default;
@@ -47,7 +50,7 @@ $box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, .5);
 
 // Grid
 $menu-height: 20vh;
-$content-height: 70vh;
+$content-height: 80vh;
 
 $spacing: 20px;
 
