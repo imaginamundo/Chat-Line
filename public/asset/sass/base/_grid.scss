@@ -22,3 +22,10 @@ body {
 		width: 100%;
 	}
 }
+@media (max-height: $body-max-height) {
+	body {
+		position: static;
+		margin-top: $spacing / 2;
+		transform: none;
+	}
+}

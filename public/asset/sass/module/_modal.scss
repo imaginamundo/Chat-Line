@@ -1,0 +1,27 @@
+.modal-open {
+	overflow: hidden;
+}
+.modal {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: auto;
+    z-index: 10;
+	padding: 0 $spacing;
+	background: #fff;
+	border-radius: $border-radius;
+	border: 10px solid #000;
+	box-shadow: #0088FF 5px 5px;
+	text-align: center;
+	transition: all .3s;
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(0);
+	&.active {
+		visibility: visible;
+		opacity: 1;
+		transform: scale(1);
+	}
+}

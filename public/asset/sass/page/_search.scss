@@ -1,0 +1,6 @@
+.without-result {
+	display: none;
+	&.active {
+		display: block;
+	}
+}

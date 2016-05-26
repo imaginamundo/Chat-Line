@@ -30,3 +30,13 @@
         }
     }
 }
+@media (max-width: $breakpoint) {
+    .main-search {
+        input {
+            position: absolute;
+            left: 0;
+            display: none;
+            width: 156px;
+        }
+    }
+}

@@ -10,6 +10,13 @@ a {
         color: $link-color-hover;
     }
 }
+hr {
+    max-width: 600px;
+    margin: 0 auto;
+    height: 4px;
+    background: #ddd;
+    border: 0;
+}
 .text-primary {
     color: $primary;
 }

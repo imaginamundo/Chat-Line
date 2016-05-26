@@ -1,0 +1,17 @@
+.icon-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+	height: 40px;
+	color: #000;
+	font-size: 40px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 35px;
+	transition: transform .3s ease-in-out;
+	&:hover {
+		color: #000;
+		transform: rotate(360deg);
+	}
+}

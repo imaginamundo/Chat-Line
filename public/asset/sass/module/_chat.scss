@@ -64,6 +64,12 @@
         margin-top: 0;
         max-width: 400px;
         border-radius: $border-radius;
+        &.no-messages {
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
     }
     .send-by-me {
         text-align: right;

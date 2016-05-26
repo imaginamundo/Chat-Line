@@ -27,9 +27,14 @@ app.get('/login', function (req, res) {
 	res.render('pages/login');
 });
 
-// register
+// group
 app.get('/g/groupName', function (req, res) {
 	res.render('pages/group');
+});
+
+// create group
+app.get('/createGroup', function (req, res) {
+	res.render('pages/group/create');
 });
 
 // search

@@ -1,6 +1,6 @@
 <header class="main-header">
     <nav class="right">
-        <a href="/" class="btn btn-white">Criar grupo</a>
+        <a href="/createGroup" class="btn btn-white">Criar grupo</a>
         <a href="/login">Entrar</a>
     </nav>
     
@@ -12,8 +12,12 @@
     </h1>
     
     <form class="main-search left" action="/search">
-        <input type="search" placeholder="Buscar grupo…" name="key" />
-        <button type="submit" class="btn-icon tooltipped tooltipped-s" aria-label="Buscar">
+        <input type="search"
+               id="search"
+               placeholder="Buscar grupo…"
+               name="key"
+               required />
+        <button type="submit" id="submit-search" class="btn-icon tooltipped tooltipped-s" aria-label="Buscar">
             <img src="/public/asset/icon/bloom.svg" alt="Search">
         </button>
     </form>
