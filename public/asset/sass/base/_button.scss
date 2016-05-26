@@ -29,7 +29,7 @@ input[type="submit"] {
         border-color: $btn-background;
         color: $btn-background;
         &:hover {
-            background: rgba(0, 0, 0, .05);
+            background: rgba(0, 0, 0, .1);
         }
     }
     &.btn-icon {
@@ -126,6 +126,7 @@ a {
         color: #fff;
     }
 }
+
 
 
 

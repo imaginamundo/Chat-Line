@@ -32,11 +32,6 @@ app.get('/g/groupName', function (req, res) {
 	res.render('pages/group');
 });
 
-// create group
-app.get('/createGroup', function (req, res) {
-	res.render('pages/group/create');
-});
-
 // search
 app.get('/search', function (req, res) {
 	res.render('pages/search');

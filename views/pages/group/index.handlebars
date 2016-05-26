@@ -58,9 +58,9 @@
             </p>
             <p>ou compartilhe nas redes sociais</p>
             <p>
-                <a href="#" class="btn btn-facebook">Facebook</a>
-                <a href="#" class="btn btn-google-plus">Google +</a>
-                <a href="#" class="btn btn-twitter">Twitter</a>
+                <a href="#" id="share-facebook" class="btn btn-facebook" target="_blank">Facebook</a>
+                <a href="#" id="share-google-plus" class="btn btn-google-plus" target="_blank">Google +</a>
+                <a href="#" id="share-twitter" class="btn btn-twitter" target="_blank">Twitter</a>
             </p>
         </div>
         <div id="configuration-window" class="setting configuration">
@@ -123,9 +123,7 @@
             </div>
             <div>
                 <p>
-                    <a href="#" class="open-modal" modal="modal-teste">Teste de modal</a>
-                    <br />
-                    <a href="#" class="open-modal" modal="modal-username">Escolha de usuário</a>
+                    <a href="#" class="open-modal" modal="modal-username">Escolha de usuário - Modal</a>
                 </p>
             </div>
             <div>
@@ -154,23 +152,19 @@
                 Já escolhi o nome!
             </button>
         </p>
-        <p><small>Apenas caracteres normais (sem acentos, espaços, etc.)</small></p>
+        <p><small>Sem caracteres especiais (acentos, espaços, etc.)</small></p>
     </form>
 
     <hr />
 
     <h2>ou faça login e também crie salas e guarde as que gostar</h2>
     <a href="/login" class="btn btn-primary">
-        Ir para a tela de login
+        Ir para a login ou cadastro
     </a>
     <p>Não se preocupe, depois do login ou cadastro te traremos de volta ao grupo que você entrou</p>
 
     <hr />
     <p>Você também pode conhecer os <a href="/">grupos mais populares</a> e quem sabe encontrar algum que te alegre</p>
-</div>
-<div id="modal-teste" class="modal">
-    <a href="#" class="icon-close close">×</a>
-    <p class="wordart" title="WordArt">WordArt</p>
 </div>
 
 <script src="/public/asset/js/group.js"></script>

@@ -36,7 +36,7 @@ input[type="submit"] {
     button.btn-outline:hover,
     input[type="button"].btn-outline:hover,
     input[type="submit"].btn-outline:hover {
-      background: rgba(0, 0, 0, 0.05); }
+      background: rgba(0, 0, 0, 0.1); }
   .btn.btn-icon,
   button.btn-icon,
   input[type="button"].btn-icon,
@@ -162,6 +162,19 @@ input[type="checkbox"] {
 .form {
   margin: 0 auto;
   max-width: 300px; }
+
+label.btn {
+  padding: 7px 12px; }
+
+.file-input {
+  cursor: pointer; }
+  .file-input input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
 
 body {
   background: url("../image/background.png"); }
@@ -464,7 +477,7 @@ hr {
   font-size: 40px;
   text-align: center;
   text-decoration: none;
-  line-height: 35px;
+  line-height: 32px;
   transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }

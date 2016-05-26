@@ -48,3 +48,17 @@ input[type="checkbox"] {
 	margin: 0 auto;
 	max-width: 300px;
 }
+label.btn {
+    padding: 7px 12px;
+}
+.file-input {
+	cursor: pointer;
+    input {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+}

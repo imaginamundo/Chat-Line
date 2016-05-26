@@ -1,6 +1,6 @@
 <header class="main-header">
     <nav class="right">
-        <a href="/createGroup" class="btn btn-white">Criar grupo</a>
+        <a href="/createGroup" class="btn btn-white open-modal" modal="modal-create">Criar grupo</a>
         <a href="/login">Entrar</a>
     </nav>
     
@@ -23,3 +23,37 @@
     </form>
 </header>
 
+<div id="modal-create" class="modal">
+    <a href="#" class="icon-close close">×</a>
+    <h2>Criar grupo</h2>
+    <form>
+        <p>
+            <label class="file-input btn btn-primary btn-outline">
+                Inserir imagem
+                <input type="file"
+                       id="upload-group-image"
+                       accept="image/x-png, image/gif, image/jpeg" />
+            </label>
+        </p>
+        <p>
+            <label>
+                Nome do grupo
+                <input type="text" name="username" placeholder="Nome do seu grupo" required />
+            </label>
+        </p>
+        <p><a href="/">localhost:8080/g/<span id="group-url"></span></a></p>
+        <p>
+            <label>
+                Senha <small>(opcional)</small>
+                <input type="password" />
+            </label>
+        </p>
+        <p>
+            <button type="submit" class="btn-success">
+                Criar grupo
+            </button>
+        </p>
+    </form>
+
+    
+</div>

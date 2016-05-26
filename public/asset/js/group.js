@@ -37,6 +37,16 @@
 	shareInput.addEventListener('click', function() {
 		this.setSelectionRange(0, this.value.length);
 	});
+	// Facebook
+	document.getElementById('share-facebook').href = ('https://www.facebook.com/sharer/sharer.php?u=' + shareInput.value);
+	
+	// Google Plus
+	document.getElementById('share-google-plus').href = ('https://plus.google.com/share?url=' + shareInput.value);
+
+	// Twitter
+	document.getElementById('share-twitter').href = ('https://twitter.com/home?status=' + shareInput.value);
+
+	
 
 	// Go to last message
 	function goToLastMessage() {
