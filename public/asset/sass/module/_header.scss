@@ -1,4 +1,5 @@
 .main-header {
+    padding: $spacing 0;
     @extend .clearfix;
     @extend .container;
     a:not(.btn) {
@@ -13,6 +14,13 @@
         }
     }
     h1 {
+        margin-right: $spacing;
         font-size: 0;
+        a {
+            display: inline-block;
+        }
+        img {
+            vertical-align: middle;
+        }
     }
 }
