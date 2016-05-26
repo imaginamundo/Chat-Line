@@ -1,0 +1,15 @@
+.main-header {
+    @extend .clearfix;
+    @extend .container;
+    a:not(.btn) {
+        color: #fff;
+    }
+    nav {
+        a {
+            margin-left: $spacing / 2;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

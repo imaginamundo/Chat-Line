@@ -1,0 +1,62 @@
+.user {
+    position: relative;
+    display: block;
+    padding: $spacing / 2;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    color: $font-color;
+    text-decoration: none;
+    transition: background .2s ease-in-out;
+    &:first-child {
+        border-top: 1px solid rgba(0, 0, 0, .2);
+    }
+    
+    &.notification {
+        background: rgba(255, 50, 50, .2);
+        .counter {
+            transform: scale(1);
+        }        
+    }
+    &:hover {
+        background: rgba(255, 255, 255, .4);
+    }
+    &.active {
+        background: #fff;
+        z-index: 1;
+        cursor: default;
+    }
+    &.all {
+        img {
+            pointer-events: none;
+        }
+    }
+    .user-pic {
+        position: relative;
+        img {
+            margin-right: $spacing / 2;
+            width: $user-pic-width;
+            height: $user-pic-height;
+            clip-path: $hexagon;
+            vertical-align: middle;
+            object-fit: cover;
+            transition: all .2s ease-in-out;
+            &:hover {
+                 clip-path: $hexagon-hover;
+            }
+        }
+    }
+    .counter {
+        position: absolute;
+        top: -18px;
+        right: 6px;
+        width: 22px;
+        background: #FF3E56;
+        border-radius: 4px;
+        color: #fff;
+        font-size: .8em;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5em;
+        transform: scale(0);
+        transition: all .2s ease-in-out;
+    }
+}

@@ -1,0 +1,21 @@
+.sidebar {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: $sidebar-background;
+    border-radius: $border-radius 0 0 $border-radius;
+    &:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 13px;
+        background: url('../image/square.png');
+    }
+    h3 {
+        text-align: center;
+    }
+}

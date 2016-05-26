@@ -1,0 +1,87 @@
+// Grid
+ $container-width: 960px;
+ 
+// Color
+$default: #888 !default;
+$primary: #92B6E0 !default;
+$success: #7EB147 !default;
+$info: #89BBF5 !default;
+$warning: #F5A623 !default;
+$danger: tomato !default;
+
+$background: url('../image/background.png');
+$main-background: #fff;
+$sidebar-background: #FFD99F;
+
+// Button
+$btn-height: 2.5em !default;
+$btn-padding: .42em .8em !default;
+$btn-border-radius: 5px !default;
+
+$btn-background: $default !default;
+$btn-primary-background: $primary !default;
+$btn-success-background: $success !default;
+$btn-info-background: $info !default;
+$btn-warning-background: $warning !default;
+$btn-danger-background: $danger !default;
+
+// Form
+$form-height: 2.5em !default;
+$form-padding-vertical: .5em !default;
+$form-padding-horizontal: .8em !default;
+
+$form-background: linear-gradient(
+                            to bottom,
+                            rgba(223,223,223,1) 0%,
+                            rgba(255,255,255,1) 30%,
+                            rgba(255,255,255,1) 100%
+                        ) !default;
+$form-border: 1px solid rgba(0, 0, 0, .3) !default;
+$form-border-hover: 1px solid rgba(0, 0, 0, .7) !default;
+$form-border-radius: 4px !default;
+
+// Box
+$border-radius: 4px;
+
+$box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, .5);
+
+// Grid
+$menu-height: 20vh;
+$content-height: 70vh;
+
+$spacing: 20px;
+
+// Typography
+$font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-color: #444;
+$line-height: 1.62em;
+
+$link-color: $primary;
+$link-color-hover: darken($link-color, 5);
+
+// User
+$user-pic-width: 40px;
+$user-pic-height: 44px;
+
+// Hexagon
+$hexagon: polygon(50% 0%,
+                  100% 25%,
+                  100% 75%,
+                  50% 100%,
+                  0% 75%,
+                  0% 25%
+);
+$hexagon-hover: polygon(50% 0%,
+                        100% 5%,
+                        100% 95%,
+                        50% 100%,
+                        0% 95%,
+                        0% 5%
+);
+
+// Tooltip
+$tooltip-max-width: 250px !default;
+$tooltip-background-color: rgba(0, 0, 0, 0.8) !default;
+$tooltip-text-color: #fff !default;
+$tooltip-delay: 0 !default;
+$tooltip-duration: 0.1s !default;

@@ -1,0 +1,15 @@
+.page-default {
+    height: $content-height;
+    background: $main-background;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    box-sizing: border-box;
+    @extend .container;
+}
+.scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}

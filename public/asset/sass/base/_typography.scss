@@ -1,0 +1,15 @@
+body {
+    color: $font-color;
+    font-family: $font;
+    line-height: $line-height;
+    text-rendering: optimizeLegibility;
+}
+a {
+    color: $link-color;
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+.text-danger {
+    color: $danger;
+}

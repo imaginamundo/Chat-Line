@@ -1,0 +1,28 @@
+.clearfix {
+    &:after {
+        content: ' ';
+        display: block;
+        clear: both;
+    }
+}
+
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.padding-h {
+    padding-right: $spacing;
+    padding-left: $spacing;
+}
+
+.text-center {
+    text-align: center;
+}

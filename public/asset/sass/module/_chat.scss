@@ -1,0 +1,96 @@
+.chat {
+    position: relative;
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+.chat-header {
+    position: absolute;
+    right: $spacing;
+    left: $spacing;
+    z-index: 1;
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+    background: #fff;
+    border-bottom: 1px solid #d3d3d3;
+    box-sizing: border-box;
+    .group-thumb {
+        img {
+            margin-right: $spacing / 2;
+            width: $user-pic-width;
+            height: $user-pic-height;
+            vertical-align: middle;
+            object-fit: cover;
+            clip-path: $hexagon;
+            transition: all .2s ease-in-out;
+             &:hover {
+                clip-path: $hexagon-hover;
+            }
+        }
+    }
+    .group-action {
+        img {
+            vertical-align: middle;
+        }
+        a {
+            display: inline-block;
+            margin-left: $spacing * 2;
+            &:first-child {
+                margin-left: 0;
+            }
+            span {
+                margin-left: $spacing / 2;
+            }
+        }
+    }
+}
+.messages {
+    padding: 100px $spacing 70px $spacing;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    div {
+        text-align: left;
+        @extend .clearfix;
+    }
+    span {
+        font-size: .9em;
+        @extend .clearfix;
+    }
+    p {
+        float: left;
+        background: #d8d8d8;
+        padding: 6px 10px;
+        margin-top: 0;
+        max-width: 400px;
+        border-radius: $border-radius;
+    }
+    .send-by-me {
+        text-align: right;
+        p {
+            float: right;
+            background: #4A90E2;
+            color: #fff;
+            text-align: left;
+        }
+    }
+}
+.send-message {
+    position: absolute;
+    bottom: 0;
+    padding: $spacing;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,1) 26%,
+        rgba(255,255,255,1) 100%
+    );
+    box-sizing: border-box;
+    input {
+        width: calc(100% - 60px);
+    }
+    button {
+        margin-left: $spacing / 2;
+    }
+}

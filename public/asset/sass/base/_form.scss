@@ -1,0 +1,50 @@
+input,
+button,
+textarea,
+select {
+	padding-right: $form-padding-horizontal;
+	padding-left: $form-padding-horizontal;
+	height: $form-height;
+	border-radius: $form-border-radius;
+	box-sizing: border-box;
+	font-size: inherit;
+	font-weight: normal;
+	line-height: inherit;
+	outline: none;
+	transition: border .2s ease-in-out;
+	vertical-align: middle;
+}
+input {
+	background: $form-background;
+	border: $form-border;
+	&:focus {
+		border: $form-border-hover;
+	}
+}
+input[type="search"] {
+	padding-right: $form-padding-horizontal / 2;
+	padding-left: $form-padding-horizontal / 2;
+}
+textarea {
+	vertical-align: top;
+	padding-top: $form-padding-vertical;
+	padding-bottom: $form-padding-vertical;
+	height: auto;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+	font-family: inherit;
+	cursor: pointer;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	padding: 0;
+	height: auto;
+	vertical-align: baseline;
+}
+
+.form {
+	margin: 0 auto;
+	max-width: 300px;
+}

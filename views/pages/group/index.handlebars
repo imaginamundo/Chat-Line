@@ -1,0 +1,135 @@
+<div class="page-default">
+    <aside class="sidebar">
+        <h3>Membros <small>(4)</small></h3>
+        <nav id="users">
+            <a href="#" class="user all active">
+                <span class="user-pic">
+                    <img src="/public/asset/image/pic/_all.png" />
+                    <span class="counter">0</span>     
+                </span>
+                Todos
+            </a>
+            <a href="#" class="user notification">
+                <span class="user-pic">
+                    <img src="/public/asset/image/pic/1.jpg" />
+                    <span class="counter">8</span>     
+                </span>
+                Gripp
+            </a>
+            <a href="#" class="user">
+                <span class="user-pic">
+                    <img src="/public/asset/image/pic/0.jpg" />
+                    <span class="counter">0</span>     
+                </span>
+                Dio
+            </a>
+            <a href="#" class="user">
+                <span class="user-pic">
+                    <img src="/public/asset/image/pic/2.jpg" />
+                    <span class="counter">0</span>     
+                </span>
+                Fábio
+            </a>
+        </nav>
+    </aside>
+    <main class="chat">
+        <div class="chat-header">
+            <div class="group-thumb left">
+                <img src="/public/asset/image/group/1.jpg" />
+                Nome do grupo
+            </div>
+            <div class="group-action right">
+                <a href="#" id="share">
+                    <img src="/public/asset/icon/atom.svg" /><span>Compartilhar</span>
+                </a>
+                <a href="#" id="configuration" class="tooltipped tooltipped-sw" aria-label="Configurações">
+                    <img src="/public/asset/icon/gears.svg" />
+                </a>
+            </div>
+        </div>
+        <div id="share-window" class="setting share">
+            <h4>Compartilhar</h4>
+            <p>
+                <label>
+                    Envie este link para quem quiser que entre na sala
+                    <input type="text" id="share-link" class="block" />
+                </label>
+            </p>
+            <p>ou compartilhe nas redes sociais</p>
+            <p>
+                <a href="#" class="btn btn-facebook">Facebook</a>
+                <a href="#" class="btn btn-google-plus">Google +</a>
+                <a href="#" class="btn btn-twitter">Twitter</a>
+            </p>
+        </div>
+        <div id="configuration-window" class="setting configuration">
+            <h4>Configurações</h4>
+            <div class="half-column text-center">
+                <a href="#">
+                    <img src="" />
+                </a>
+            </div>
+            <div class="half-column">
+                <p>
+                    <label>
+                        Nome do grupo
+                        <input type="text" id="group-name" class="block" />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Senha para entrar <small>(opcional)</small>
+                        <input type="text" id="password" class="block" />
+                    </label>
+                </p>
+                <p>
+                    <a href="#" class="btn btn-white">Salvar configurações</a>
+                </p>
+            </div>
+        </div>
+        <div class="messages">
+            <div>
+                <span><b>Nome do membro</b> - 00:48</span>
+                <p>Oi oi</p>
+            </div>
+            <div>
+                <span><b>Nome do membro</b> - 00:48</span>
+                <p>Oi oi</p>
+            </div>
+            <div class="send-by-me">
+                <span>00:48</span>
+                <p>Oi oi</p>
+            </div>
+            <div>
+                <span><b>Nome do membro</b> - 00:48</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit mattis dolor vehicula suscipit. Morbi fringilla nunc eu velit viverra ornare. In hac habitasse platea dictumst. Aenean consectetur, nulla sed semper lobortis, purus nunc accumsan elit, a aliquam ex odio accumsan urna. Nam accumsan nisl sit amet luctus feugiat. Phasellus sollicitudin tincidunt ex, vitae lacinia purus mattis a. Vivamus nec maximus velit. Vestibulum at vulputate turpis, sed consequat turpis. Aliquam lacinia, dolor id laoreet feugiat, quam eros convallis est, eu consectetur tortor nisl commodo lectus. Phasellus sollicitudin maximus tortor ut condimentum. Morbi lacus felis, hendrerit ac luctus tempor, commodo eu nisl. Cras sagittis elementum feugiat. Aliquam nisl leo, cursus aliquam ligula ut, consequat maximus arcu. Nulla a odio et nisl placerat sollicitudin. Quisque sit amet odio sit amet eros finibus auctor sed in purus.</p>
+            </div>
+            <div>
+                <span><b>Nome do membro</b> - 00:48</span>
+                <p>Oi oi</p>
+            </div>
+            <div>
+                <span><b>Nome do membro</b> - 00:48</span>
+                <p>Oi oi</p>
+            </div>
+            <div>
+                <span><b>Nome do membro</b> - 00:48</span>
+                <p>Oi oi</p>
+            </div>
+            <div>
+                <span><b>Nome do membro</b> - 00:48</span>
+                <p id="last">Oi oi</p>
+            </div>
+        </div>
+        <div class="send-message">
+            <form id="send-message" >
+                <input type="text" name="message" placeholder="Aperte enter para enviar a mensagem" />
+                <button type="submit" class="btn-icon tooltipped tooltipped-nw" aria-label="Enviar mensagem">
+                <img src="/public/asset/icon/cannon.svg">
+                </button>
+            </form>
+        </div>
+    </main>
+</div>
+
+<script src="/public/asset/js/group.js"></script>

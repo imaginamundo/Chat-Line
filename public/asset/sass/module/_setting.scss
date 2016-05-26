@@ -1,0 +1,29 @@
+.setting  {
+	position: absolute;
+	right: $spacing;
+	left: $spacing;
+	padding-right: $spacing;
+	padding-left: $spacing;
+	background: linear-gradient(to bottom, #6EA5D8 0%, #95BAE4 8%);
+    border-radius: 0 0 $border-radius $border-radius;
+	color: #fff;
+	transition: top ease-in .2s;
+	&.share {
+		top: -160px;
+	}
+	&.configuration {
+		top: -217px;
+		img {
+			width: $user-pic-width * 5;
+			height: $user-pic-height * 5;
+            clip-path: $hexagon;
+            transition: all .2s ease-in-out;
+		}
+	}
+	&.active {
+		top: 85px;
+	}
+	h4 {
+		text-align: center;
+	}
+}	

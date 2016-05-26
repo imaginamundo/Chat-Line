@@ -1,0 +1,14 @@
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+}
+.half-column {
+    float: left;
+    width: 50%;
+}
+@media (max-width: 686px) {
+    .half-column {
+        float: left;
+        width: 100%;
+    }
+}
