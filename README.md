@@ -7,3 +7,9 @@
 Will start at ´localhost:8080´
 
 Change in the file server.js.
+
+## To do
+1. Input File;
+2. Responsive;
+3. API;
+4. API Integration.
