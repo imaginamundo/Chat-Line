@@ -42,6 +42,11 @@ app.use(function(req,res){
 	res.render('pages/404');
 });
 
+var port = process.env.PORT || 8080;
 
-app.listen(8080);
-console.log('http://localhost:8080/');
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
+// Run Locally
+// app.listen(8080);
+// console.log('http://localhost:8080/');
