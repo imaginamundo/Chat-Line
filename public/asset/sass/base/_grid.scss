@@ -5,8 +5,7 @@ html {
 body {
 	position: relative;
 	top: 50%;
-	margin: 0 ($spacing / 2);
-	transform: translateY(-50%);
+	margin: $spacing ($spacing / 2);
 }
 .container {
 	max-width: $container-width;
