@@ -72,21 +72,31 @@
                 </a>
             </div>
             <div class="half-column">
-                <p>
-                    <label>
-                        Nome do grupo
-                        <input type="text" id="group-name" class="block" />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Senha para entrar <small>(opcional)</small>
-                        <input type="text" id="password" class="block" />
-                    </label>
-                </p>
-                <p>
-                    <a href="#" class="btn btn-white">Salvar configurações</a>
-                </p>
+                <form>
+                    <p>
+                        <label>
+                            Nome do grupo
+                            <input type="text"
+                                   id="group-name"
+                                   class="block"
+                                   required="" />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Senha para entrar <small>(opcional)</small>
+                            <input type="password"
+                                   id="group-password"
+                                   class="block" />
+                        </label>
+                    </p>
+                    <p>
+
+                        <button type="submit" class="btn-white">
+                            Salvar configurações
+                        </button>
+                    </p>
+                </form>
             </div>
         </div>
         <div class="messages">
@@ -146,7 +156,10 @@
     <form>
         <p>
             <label>
-                <input type="text" name="username" placeholder="Seu nome de usuário" />
+                <input type="text"
+                       name="username"
+                       placeholder="Seu nome de usuário"
+                       required />
             </label>
             <button class="btn-success">
                 Já escolhi o nome!
