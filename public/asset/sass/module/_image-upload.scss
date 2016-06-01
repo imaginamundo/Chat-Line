@@ -1,0 +1,44 @@
+.image-input {
+	position: relative;
+	display: inline-block;
+	width: $user-pic-width * 5;
+	height: $user-pic-height * 5;
+	clip-path: $hexagon;
+	background: tomato;
+	color: #fff;
+	line-height: $user-pic-height * 5; 
+	&:hover {
+		background: darken(tomato, 10);
+		span {
+			opacity: 1;
+		}
+	}
+	img {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: background .2s ease-in;
+		object-fit: cover;
+		vertical-align: middle;
+		z-index: 0;
+		&.active {
+			z-index: 1;
+		}
+	}
+	span {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		margin: auto;
+		height: 40px;
+		background: rgba(0, 0, 0, .7);
+		font-size: 1.3em;
+		line-height: 40px;
+		opacity: 0;
+		transition: opacity .2s ease-in;
+	}
+}
