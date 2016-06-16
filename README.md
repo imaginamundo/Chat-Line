@@ -13,3 +13,6 @@ Change in the file server.js.
 2. Responsive;
 3. API;
 4. API Integration.
+
+## Doc
+https://docs.google.com/document/d/1QsNuH8d80Apgjqv-dTNP_qTpcWOSEL836VQ7qqNZgjk/edit?usp=sharing
